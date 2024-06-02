@@ -1,278 +1,171 @@
-Paragraph
-By writing regular text you are basically writing a paragraph.
-
-This is a paragraph.
-This is a paragraph.
-
 Headings
-There are 6 heading variants. The number of "#" symbols, followed by text, indicates the importance of the heading.
+You can use the # symbol to create headings. One # creates an H1 heading, two create an H2 heading, and so on, like this:
 
-# Heading 1
-## Heading 2
-### Heading 3
-#### Heading 4
-##### Heading 5
-###### Heading 6
-Heading 1
-Heading 2
-Heading 3
-Heading 4
-Heading 5
-Heading 6
-Emphasis
-Modifying text is so neat and easy. You can make your text bold, italic and strikethrough.
+# A first-level heading
+## A second-level heading
+### A third-level heading
+#### A four-level heading
+##### A five-level heading
+###### A six-level heading
+Create Headings in markdown
+Paragraphs
+To create paragraphs, you can use a blank line to separate one or more lines of text or paragraphs.
 
-Using two asterisks **this text is bold**.  
-Two underscores __work as well__.  
-Let's make it *italic now*.  
-You guessed it, _one underscore is also enough_.  
-Can we combine **_both of that_?** Absolutely.
-What if I want to ~~strikethrough~~?
-Using two asterisks this text is bold.
-Two underscores work as well.
-Let's make it italic now.
-You guessed it, one underscore is also enough.
-Can we combine both of that? Absolutely.
-What if I want to strikethrough?
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam est odio, commodo id diam sed, pulvinar sagittis tortor. Nam vestibulum purus eros. Sed congue, mi id pretium auctor, nibh augue iaculis arcu, eu tristique quam dolor at erat.
 
-Blockquote
-Want to emphasise importance of the text? Say no more.
+Quisque vel odio condimentum, mollis sem vitae, porta diam. Praesent ligula elit, condimentum eget ex sed, commodo sollicitudin sapien.
 
-> This is a blockquote.
-> Want to write on a new line with space between?
->
-> > And nested? No problem at all.
-> >
-> > > PS. you can **style** your text _as you want_.
-This is a blockquote. Want to write on a new line with space between?
 
-And nested? No problem at all.
+Proin volutpat faucibus nulla. Nullam eros sem, ultricies gravida nunc nec, dapibus posuere nisl. Nunc lacinia elementum turpis in pharetra. Aenean eu neque eros.
+Create a Paragraph in markdown.
+Comments
+Comments are available in almost every programming language. They help developers write notes and add additional information to their code, helping other developers understand what's going on and how the code is working.
 
-PS. you can style your text as you want. :
+To add notes and additional information in Markdown, use the following syntax: <!--- Wrap text --->.
 
-Images
-The best way is to simply drag & drop image from your computer directly. You can also create reference to image and assign it that way.
-Here is the syntax.
+Here's an example:
 
-![text if the image fails to load](auto-generated-path-to-file-when-you-upload-image "Text displayed on hover")
+<!-- This content will not appear in the rendered Markdown -->
+Create a comment in the markdown
+Styling text
+You can apply basic styles to your text, such as bold, italic, strikethrough, subscript, or superscript, to improve readability and convey your point more clearly.
 
-[logo]: auto-generated-path-to-file-when-you-upload-image "Hover me"
-![error text][logo]
-text if the image fails to load
+For Bold, you can use the following syntax:  **your text**
+For italics, you can use the following syntax:  *your text* or _your text_.
+For strikethrough, you can use the following syntax: ~~your text~~
+For subscript, you can use the following syntax: The subscript <sub> text </sub> is here.
+For superscript, you can use the following syntax:  The superscript <sup> text </sup> is here.
+## Bold
 
-error text
+**your text**
 
-Links
-Similar to images, links can also be inserted directly or by creating a reference. You can create both inline and block links.
+## italics
 
-[markdown-cheatsheet]: https://github.com/im-luka/markdown-cheatsheet
-[docs]: https://github.com/adam-p/markdown-here
+*your text*
+_your text_
 
-[Like it so far? Follow me on GitHub](https://github.com/im-luka)
-[My Markdown Cheatsheet - star it if you like it][markdown-cheatsheet]
-Find some great docs [here][docs]
-Like it so far? Follow me on GitHub
-My Markdown Cheatsheet - star it if you like it
-Find some great docs here
+## strikethrough
 
+~~your text~~
+
+## subscript
+
+The subscript <sub> text </sub> is here.
+
+## superscript
+
+The subscript <sup> text </sup> is here.
+Quotes
+A blockquote or quote is a sentence or paragraph formatted to let the reader know that you're quoting someone. To create a blockquote in Markdown, you can use the > symbol.
+
+> Text that is a quote
+Create block quote or quote in markdown
 Code
-You can cerate both inline and full block code snippets. You can also define programming language you were using in your snippet. All by using backticks.
+Markdown files support two types of code samples: inline and code block.
 
-    I created `.env` file at the root.
-    Backticks inside backticks? `` `No problem.` ``
+To add a code block in a Markdown file, use the following syntax: ``` your code ```.
+To add inline code to the Markdown file, use the following syntax: `your code`.
+## Code Block
 
-    ```
-    {
-      learning: "Markdown",
-      showing: "block code snippet"
-    }
-    ```
+```
+// ES5 syntax
+var multiply = function(x, y) {
+  return x * y;
+};
 
-    ```js
-    const x = "Block code snippet in JS";
-    console.log(x);
-    ```
-I created .env file at the root. Backticks inside backticks? `No problem.`
+// ES6 arrow function
+var multiply = (x, y) => { return x * y; };
 
-{
-  learning: "Markdown",
-  showing: "block code snippet"
-}
-const x = "Block code snippet in JS";
-console.log(x);
+// Or even simpler
+var multiply = (x, y) => x * y;
+```
+
+## Inline code 
+
+JavaScript provides three different value comparison operations: strict equality using `===`, loose equality using `==`, and the `Object.is()` method.
+
+
+Create a code block example.
+To support code highlighting in a code block, you can add an optional language identifier after your triple backticks (like JavaScript in the example below):
+
+## Code Block
+
+```javascript
+
+// ES5 syntax
+var multiply = function(x, y) {
+  return x * y;
+};
+
+// ES6 arrow function
+var multiply = (x, y) => { return x * y; };
+
+// Or even simpler
+var multiply = (x, y) => x * y;   
+
+```
+Create a code block with a syntax highlighting example.
+Links
+A markdown file divides links into two categories: inline and relative.
+
+Inline links
+To create an inline link in a Markdown file, wrap the link text in brackets [ ] followed immediately by the URL in parentheses ( ).
+
+This site was built using [GitHub Pages](https://pages.github.com/).
+
+Relative links
+Relative links are defined similarly to inline links but they change in the [] section: the [] section contains the path of the file in your repository.
+
+You use relative links to link two files: for example, to link the CONTRIBUTING file into the README file.
+
+[Contribution guidelines](docs/CONTRIBUTING.md)
+Relative links starting with / will be relative to the repository root. You can use all relative link operands, such as ./ and ../.:
+
+[Contribution guidelines](../docs/CONTRIBUTING.md)
+Images
+To add an image in a markdown file, add a ! and then wrap the alt text in []. Then, wrap the image link with parentheses ().
+
+It looks like this:
+
+![Markdown](https://img.shields.io/badge/markdown-%23000000.svg?style=for-the-badge&logo=markdown&logoColor=white)
 Lists
-As you can do in HTML, Markdown allows creating of both ordered and unordered lists.
+A list helps record essential information in order, which can be vital for the reader and makes it easy for people to understand and find information.
 
-Ordered List
-1. HTML
-2. CSS
-3. Javascript
-4. React
-7. I'm Frontend Dev now 👨🏼‍🎨
-HTML
-CSS
-Javascript
-React
-I'm Frontend Dev now 👨🏼‍🎨
-Unordered List
-- Node.js
-+ Express
-* Nest.js
-- Learning Backend ⌛️
-Node.js
-Express
-Nest.js
-Learning Backend ⌛️
-Mixed List
-You can also mix both of the lists and create sublists.
-PS. Try not to create lists deeper than two levels. It is the best practice.
+Markdown files support three types of lists:
 
-1. Learn Basics
-   1. HTML
-   2. CSS
-   7. Javascript
-2. Learn One Framework
-   - React 
-     - Router
-     - Redux
-   * Vue
-   + Svelte
-Learn Basics
-HTML
-CSS
-Javascript
-Learn One Framework
-React
-Router
-Redux
-Vue
-Svelte
-Table
-Great way to display well-arranged data. Use "|" symbol to separate columns and ":" symbol to align row content.
+Ordered list
+Unordered list
+Task list
+Ordered list
+The first type is an ordered list. To create an ordered list, start with numbers followed by periods.
 
-| Left Align (default) | Center Align | Right Align |
-| :------------------- | :----------: | ----------: |
-| React.js             | Node.js      | MySQL       |
-| Next.js              | Express      | MongoDB     |
-| Vue.js               | Nest.js      | Redis       |
-Left Align (default)	Center Align	Right Align
-React.js	Node.js	MySQL
-Next.js	Express	MongoDB
-Vue.js	Nest.js	Redis
-Task List
-Keeping track of the tasks that are done, and those that need to be done.
+1. one
+2. two
+3. three
+4. four
+Create an ordered list
+Unordered list
+The second type is an unordered list. To create an unordered list, use -, + or * (depending on your preference - they'll all render as an unordered list):
 
-- [x] Learn Markdown
-- [ ] Learn Frontend Development
-- [ ] Learn Full Stack Development
- Learn Markdown
- Learn Frontend Development
- Learn Full Stack Development
-Footnote
-Want to describe something at the end of the file? Use footnote!
-
-#### I am working on a new project. [^1]
-[^1]: Stack is: React, Typescript, Tailwind CSS  
-
-Project is about music & movies.
-
-##### Hope you will like it. [^see]
-[^see]: Loading... ⌛️
-I am working on a new project. 1
-Project is about music & movies.
-
-Hope you will like it. 2
-Jump to section
-You can give ID to a section so that you can jump straight to that part of the file from wherever you are.
-
-[Jump to a section with custom ID](#some-id)
-
-...
-
-<a name="some-id" />
-
-##### Section with some ID
-Jump to a section with custom ID
-
-Horizontal Line
-You can use asterisks, hyphens or underlines (*, -, _) to create horizontal line.
-The only rule is that you must include at least three chars of the symbol.
-
-First Horizontal Line
-
-***
-
-Second One
-
------
-
-Third
-
-_________
-First Horizontal Line
-
-Second One
-
-Third
-
-HTML
-You can also use raw HTML in your Markdown file. Most of the times that will work well, but sometimes you can experience some differences that you are not used to when working with standard HTML. Using CSS will not work.
-
-<h1>This is a heading</h1>
-<p>Paragraph...</p>
-
-<hr />
-
-<img src="auto-generated-path-to-file-when-you-upload-image" width="200">
-<a href="https://github.com/im-luka">Follow me on GitHub</a>
-
-<br />
-<br />
-
-<p>Quick hack for <strong><em>centering image</em></strong>?</p>
-<p align="center"><img src="auto-generated-path-to-file-when-you-upload-image" /></p>
-
-<details>
-  <summary>One more quick hack? 🎭</summary>
-  
-  → Easy  
-  → And simple
-</details>
-This is a heading
-Paragraph...
-
- Follow me on GitHub
-
-Quick hack for centering image?
+* First item
+* Second item
+* Third item
+* Fourth item
 
 
+- First item
+- Second item
+- Third item
+- Fourth item
 
-One more quick hack? 🎭
-Section with some ID
-Footnotes
-Stack is: React, Typescript, Tailwind CSS ↩
++ First item
++ Second item
++ Third item
++ Fourth item
+Create an unordered list
+Task list
+The third type is a task list. To create a task list, list items start with a hyphen, followed by a space, followed by square brackets []. You can use an x in the bracket [x] to mark a task as complete.
 
-Loading... ⌛️ ↩
-
-About
-⬇️ The only Markdown Cheatsheet you will ever need to raise your docs to the next level. PDF included.
-
-Topics
-markdown documentation tutorial guide cheatsheet web-dev github-markdown
-Resources
- Readme
- Activity
-Stars
- 157 stars
-Watchers
- 4 watching
-Forks
- 50 forks
-Report repository
-Releases 1
-v0.1.0
-Latest
-on Mar 13, 2023
-Packages
-No packages published
-Footer
+- [x] #739
+- [ ] https://github.com/octo-org/octo-repo/issues/740
+- [ ] Add delight to the experience when all tasks are complete :tada:
